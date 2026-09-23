@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body {
+    margin : 0;
+    font-family : Helvetica;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding : 0.2rem 0 0.2rem 0;
+    background-color: #837e7e;
+    text-align: center;
+}
+
+.logo {
+    height: 8%;
+    width: 8%;
+    border-radius: 20px;
+}
+
+.logo:hover {
+    box-shadow: 0 0 10px #c4c2c2;
+}
+
+main {
+    flex : 1;
+}
+
+.bulle {
+    background-color: #837e7e;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 25rem 10rem 25rem;
+    border-radius: 100px;
+}
+
+.consigneNb {
+    display: flex;
+    justify-content: space-between;
+    gap : 0.5rem;
+    justify-content: center;
+    margin : 8rem 0 3rem 0;
+}
+
+button {
+    border-radius: 30px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap : 0.5rem;
+    align-items: center;
+}
+
+.button1 {
+    padding: 2rem 4rem;
+    margin: auto;
+}
+
+.button2 {
+    padding: 2rem 4.77rem;
+    margin: auto;
+}
+
+
+footer {
+    padding : 0.2rem 0 0.2rem 0;
+    background-color: #837e7e;
+}
+
+.foot {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+
+
+/* Ici c'est le format mobile */
+@media (max-width: 768px) { /* Éléments empilés sur Mobile */
+
+    header {
+    font-size: 10px;
+    padding : 0.1rem 0 0.1rem 0;
+    background-color: #837e7e;
+    text-align: center;
+    }
+
+    .logo:active {
+    box-shadow: 0 0 10px #c4c2c2;
+    }
+
+    .bulle {
+        font-size: 10px;
+        margin: 15% 0 15% 10%;
+        width: 80%;
+        text-align: center;
+    }
+}
