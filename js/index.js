@@ -10,20 +10,25 @@ let i = 0;
 let tt = i;
 let reset = 0;
 let resetTTC = 0;
+const max = 1;
 
 button1.addEventListener("pointerdown", () => {
     i++;
     tt++;
+    reset = 0;
     console.log("Effectif : "+i+" | Effectif total : " + tt);
     text1.textContent = "Nombre de click : "+i;
 });
 
 button2.addEventListener("pointerdown", () => {
-    reset++;
-    if (reset >= i)
+    if (reset >= max)
     {
         reset = 0;
         console.log("Le compteur est déjà à zéro");
+    }
+    else
+    {
+        reset++;
     }
     i = 0;
     resetTTC++;

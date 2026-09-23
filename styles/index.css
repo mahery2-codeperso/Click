@@ -46,6 +46,7 @@ main {
 
 button {
     border-radius: 30px;
+    color : none;
 }
 
 .button {
@@ -99,4 +100,8 @@ footer {
         width: 80%;
         text-align: center;
     }
+
+    .foot {
+    padding: 8px;
+}
 }
